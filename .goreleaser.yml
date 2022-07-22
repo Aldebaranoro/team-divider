@@ -1,0 +1,32 @@
+project_name: team-divider
+
+release:
+  prerelease: auto
+  draft: true
+  name_template: "Team divider {{.Version}}"
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+archives:
+  - replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
+      386: i386
+      amd64: x86_64
+
+brews:
+  - name: team-divider
+    homepage: https://github.com/Aldebaranoro/team-divider
+    tap:
+      owner: Aldebaranoro
+      name: team-divider
