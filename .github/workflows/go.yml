@@ -33,7 +33,7 @@ jobs:
         run: go mod download
 
       - name: Build
-        run: go build -v ./
+        run: go build -v ./cmd/app
 
       - name: Run tests
         run: go test -race ./...
