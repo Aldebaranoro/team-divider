@@ -16,6 +16,10 @@ builds:
       - linux
       - windows
       - darwin
+    ldflags:
+      - -X github.com/Aldebaranoro/team-divider/internal/config.buildVersion={{.Version}}
+      - -X github.com/Aldebaranoro/team-divider/internal/config.buildCommit={{.Commit}}
+      - -X github.com/Aldebaranoro/team-divider/internal/config.buildDate={{.Date}}
 archives:
   - replacements:
       darwin: Darwin
