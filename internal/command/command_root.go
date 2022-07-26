@@ -2,6 +2,7 @@ package command
 
 import (
 	"fmt"
+	"github.com/Aldebaranoro/team-divider/internal/config"
 	"github.com/Aldebaranoro/team-divider/internal/divider"
 	"github.com/MakeNowJust/heredoc/v2"
 	"github.com/fatih/color"
@@ -10,10 +11,11 @@ import (
 	"strings"
 )
 
-func NewCmdRoot() *cobra.Command {
+func NewCmdRoot(build config.Build) *cobra.Command {
 	cmd := &cobra.Command{
-		Use:   "team-divider player_name...",
-		Short: "Randomly divides participants into different teams",
+		Version: fmt.Sprintf("%v\ngit commit: %v\nbuilt: %v", build.Version, build.Commit, build.Date),
+		Use:     "team-divider player_name...",
+		Short:   "Randomly divides participants into different teams",
 		Example: heredoc.Doc(`
 			$ team-divider Nobby Samuel Fred "Havelock Vetinari"
 			$ team-divider Nobby Samuel Fred "Havelock Vetinari" -n 3
