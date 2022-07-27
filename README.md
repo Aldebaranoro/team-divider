@@ -1,4 +1,4 @@
-# Team divider [![Release](https://img.shields.io/github/v/release/Aldebaranoro/team-divider?color=cyan&label=%20)](https://github.com/Aldebaranoro/team-divide/releases) [![](https://github.com/Aldebaranoro/team-divider/workflows/Tests/badge.svg)](https://github.com/Aldebaranoro/team-divide/actions)
+# Team divider [![Release](https://img.shields.io/github/v/release/Aldebaranoro/team-divider?color=cyan&label=%20)](https://github.com/Aldebaranoro/team-divider/releases) [![](https://github.com/Aldebaranoro/team-divider/workflows/Tests/badge.svg)](https://github.com/Aldebaranoro/team-divide/actions)
 
 `team-divider` lets you to randomly distribute participants into different teams.
 
