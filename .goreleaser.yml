@@ -57,7 +57,13 @@ archives:
 
 brews:
   - name: team-divider
+    commit_author:
+      name: Anatoly Karas
+      email: anatol.karas@gmail.com
+    description: Command line tool for randomly dividing people into teams
+    license: "MIT"
+    folder: Formula
     homepage: https://github.com/Aldebaranoro/team-divider
-    tap:
+    github:
       owner: Aldebaranoro
-      name: team-divider
+      name: homebrew-tap
