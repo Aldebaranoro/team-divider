@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: Set up Go 1.18
         uses: actions/setup-go@v3
         with:
@@ -27,4 +29,5 @@ jobs:
           args: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAP_GITHUB_TOKEN: ${{ secrets.TAP_GITHUB_TOKEN }}
           GORELEASER_CURRENT_TAG: ${{steps.changelog.outputs.tag-name}}
