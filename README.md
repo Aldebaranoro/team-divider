@@ -19,7 +19,14 @@ go install github.com/Aldebaranoro/team-divider@latest
 ### 🍺 Homebrew
 
 ```shell
+$ brew tap Aldebaranoro/tap
 $ brew install team-divider
+```
+
+or
+
+```shell
+$ brew install Aldebaranoro/tap/team-divider
 ```
 
 ## Usage
