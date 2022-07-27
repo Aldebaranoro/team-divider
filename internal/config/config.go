@@ -1,9 +1,5 @@
 package config
 
-import (
-	"github.com/spf13/viper"
-)
-
 // Build information -ldflags .
 var (
 	buildVersion string = "dev"
@@ -40,28 +36,15 @@ func GetConfigInstance() Config {
 	return Config{}
 }
 
-// ReadConfigYML - read configurations from file and init instance Config.
-func ReadConfigYML(filePath string) error {
-	if cfg != nil {
-		return nil
+func init() {
+	if cfg == nil {
+		cfg = &Config{}
 	}
 
-	viper.SetConfigFile(filePath)
-	viper.AutomaticEnv()
-
-	if err := viper.ReadInConfig(); err != nil {
-		return err
-	}
-
-	if err := viper.Unmarshal(&cfg); err != nil {
-		return err
-	}
-
+	cfg.Project.Name = "Team divider CLI"
 	cfg.Project.Build = Build{
 		Version: buildVersion,
 		Commit:  buildCommit,
 		Date:    buildDate,
 	}
-
-	return nil
 }
