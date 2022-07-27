@@ -64,6 +64,6 @@ brews:
     license: "MIT"
     folder: Formula
     homepage: https://github.com/Aldebaranoro/team-divider
-    github:
+    tap:
       owner: Aldebaranoro
       name: homebrew-tap
