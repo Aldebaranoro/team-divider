@@ -16,6 +16,12 @@ Download the latest stable [release](https://github.com/Aldebaranoro/team-divide
 go install github.com/Aldebaranoro/team-divider@latest
 ```
 
+### 🍺 Homebrew
+
+```shell
+$ brew install team-divider
+```
+
 ## Usage
 
 ```shell
