@@ -10,12 +10,6 @@
 
 Download the latest stable [release](https://github.com/Aldebaranoro/team-divider/releases) for use on your desktop or server.
 
-### Go
-
-```shell
-go install github.com/Aldebaranoro/team-divider@latest
-```
-
 ### 🍺 Homebrew
 
 ```shell
