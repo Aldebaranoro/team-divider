@@ -8,7 +8,14 @@
 
 ### Download
 
-Download the latest stable [release](https://github.com/Aldebaranoro/team-divider/releases) for use on your desktop or server.
+Download the latest stable [release](https://github.com/Aldebaranoro/team-divider/releases) for use on your desktop or
+server.
+
+### Go
+
+```shell
+go install github.com/Aldebaranoro/team-divider/cmd/team-divider@latest
+```
 
 ### 🍺 Homebrew
 
@@ -43,7 +50,7 @@ $ team-divider Nobby Samuel Fred "Havelock Vetinari" -n 3
 
 ## Credits
 
- * [Anatoly Karas](https://github.com/Aldebaranoro)
+* [Anatoly Karas](https://github.com/Aldebaranoro)
 
 ## License
 

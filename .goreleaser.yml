@@ -12,7 +12,7 @@ before:
 builds:
   - <<: &build_defaults
       binary: bin/team-divider
-      main: ./cmd/app
+      main: ./cmd/team-divider
       ldflags:
         - -X github.com/Aldebaranoro/team-divider/internal/config.buildVersion={{.Version}}
         - -X github.com/Aldebaranoro/team-divider/internal/config.buildCommit={{.Commit}}

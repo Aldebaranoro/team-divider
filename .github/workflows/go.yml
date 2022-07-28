@@ -33,7 +33,7 @@ jobs:
         run: go mod download
 
       - name: Build
-        run: go build -v ./cmd/app
+        run: go build -v ./cmd/team-divider
 
       - name: Run tests
         run: go test -race ./...
