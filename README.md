@@ -32,6 +32,8 @@ $ brew install Aldebaranoro/tap/team-divider
 
 ## Usage
 
+### Divider
+
 ```shell
 $ team-divider player_name... [flags]
 ```
@@ -47,6 +49,12 @@ If you want to specify your number of teams, use the `-n` or `--teams` flag:
 ```shell
 $ team-divider Nobby Samuel Fred "Havelock Vetinari" -n 3
 ```
+
+### Indexer
+
+Indexer will allow you to determine the order of the player's move or compliance with any game conditions.
+
+![image](https://user-images.githubusercontent.com/48175755/182078029-c913525b-9598-470a-8186-6f4225c09c7a.png)
 
 ## Credits
 
