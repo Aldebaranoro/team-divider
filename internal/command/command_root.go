@@ -26,6 +26,8 @@ func NewCmdRoot(build config.Build) *cobra.Command {
 
 	cmd.Flags().IntP("teams", "n", 2, "number of teams")
 
+	cmd.AddCommand(NewCmdIndex())
+
 	return cmd
 }
 
