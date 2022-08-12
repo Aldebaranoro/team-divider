@@ -34,7 +34,7 @@ $ brew install Aldebaranoro/tap/team-divider
 
 ```shell
 > scoop bucket add Aldebaranoro https://github.com/Aldebaranoro/scoop-bucket
-> scoop install team-divider
+> scoop install Aldebaranoro/team-divider
 ```
 
 ## Usage
