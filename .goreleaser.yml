@@ -2,7 +2,6 @@ project_name: team-divider
 
 release:
   prerelease: auto
-  draft: true
   name_template: "Team divider {{.Version}}"
 
 before:
