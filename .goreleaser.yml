@@ -66,7 +66,7 @@ brews:
     tap:
       owner: Aldebaranoro
       name: homebrew-tap
-      token: "{{ secrets.TAP_GITHUB_TOKEN }}"
+      token: "{{ .Env.TAP_GITHUB_TOKEN }}"
 
 scoop:
   commit_author:
@@ -79,4 +79,4 @@ scoop:
   bucket:
     owner: Aldebaranoro
     name: scoop-bucket
-    token: "{{ secrets.SCOOP_TAP_GITHUB_TOKEN }}"
+    token: "{{ .Env.TAP_GITHUB_TOKEN }}"
