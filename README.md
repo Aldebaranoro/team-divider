@@ -19,34 +19,41 @@ go install github.com/Aldebaranoro/team-divider/cmd/team-divider@latest
 
 ### 🍺 Homebrew
 
-```shell
+```bash
 $ brew tap Aldebaranoro/tap
 $ brew install team-divider
 ```
 
 or
 
-```shell
+```bash
 $ brew install Aldebaranoro/tap/team-divider
+```
+
+### 🍨 Scoope
+
+```shell
+> scoop bucket add Aldebaranoro https://github.com/Aldebaranoro/scoop-bucket
+> scoop install team-divider
 ```
 
 ## Usage
 
 ### Divider
 
-```shell
+```bash
 $ team-divider player_name... [flags]
 ```
 
 For example, to divide people into two teams, you can do:
 
-```shell
+```bash
 $ team-divider Nobby Samuel Fred "Havelock Vetinari"
 ```
 
 If you want to specify your number of teams, use the `-n` or `--teams` flag:
 
-```shell
+```bash
 $ team-divider Nobby Samuel Fred "Havelock Vetinari" -n 3
 ```
 
