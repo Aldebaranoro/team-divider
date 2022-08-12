@@ -73,7 +73,7 @@ scoop:
     email: anatol.karas@gmail.com
   description: Command line tool for randomly dividing people into teams
   license: MIT
-  folder: Scoops
+  folder: bucket
   homepage: https://github.com/Aldebaranoro/team-divider
   bucket:
     owner: Aldebaranoro
